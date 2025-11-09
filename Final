@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mindful Moments</title>
+  <style>
+    /* ---------- Base Styles ---------- */
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f7f4;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #ffffffcc;
+      backdrop-filter: blur(6px);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #555;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #9c8f75;
+    }
+
+    section {
+      padding: 100px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* ---------- Hero Section ---------- */
+    #home {
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    #home h2 {
+      font-size: 2.5rem;
+      color: #3e3e3e;
+    }
+
+    #home p {
+      font-size: 1.1rem;
+      color: #666;
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+
+    /* ---------- About Section ---------- */
+    #about {
+      background-color: #f0eee9;
+      border-radius: 8px;
+    }
+
+    #about h2 {
+      color: #3e3e3e;
+    }
+
+    #about p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* ---------- Blog Section ---------- */
+    #blog article {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
+    }
+
+    #blog h3 {
+      margin-bottom: 0.5rem;
+      color: #3e3e3e;
+    }
+
+    #blog p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* ---------- Contact Section ---------- */
+    #contact {
+      background-color: #f0eee9;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    button {
+      background-color: #9c8f75;
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #857a63;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin-left: 0.8rem;
+      }
+
+      #home h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mindful Moments</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to Mindful Moments</h2>
+    <p>Find calm in the chaos. Explore mindfulness practices, reflections, and insights to bring balance into your daily life.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <p>At Mindful Moments, we believe in the power of presence. Our mission is to help individuals slow down, breathe, and reconnect with the world around them. Through articles, guided exercises, and reflections, we offer a space to cultivate peace and awareness in everyday life.</p>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2>Latest Blog Posts</h2>
+    <article>
+      <h3>Embracing Stillness</h3>
+      <p>Stillness isn’t the absence of movement—it’s the art of finding quiet within. Learn simple breathing techniques to center your mind.</p>
+    </article>
+    <article>
+      <h3>Mindful Mornings</h3>
+      <p>Transform your mornings into a ritual of gratitude and clarity. Discover how small practices can set the tone for your day.</p>
+    </article>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Have a question or want to connect? Send us a message below.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Mindful Moments — All rights reserved.
+  </footer>
+
+</body>
+</html>
